@@ -1,0 +1,15 @@
+<%= simple_form_for(@item, html: {class: "form-signin"}) do |f| %>
+  <%= f.error_notification %>
+
+  <%= f.input :name, required: true, label: false, placeholder: "Product Name", input_html: { class: "form-control"} %>
+   <%= f.input :seller, required: true, label: false, placeholder: "Seller", input_html: { class: "form-control"} %>
+   <%= f.input :desciption, required: true, label: false, placeholder: "desciption", input_html: { class: "form-control"}, rows: 5 %>
+   <%= f.input :price, required: true, label: false, placeholder: "Price", input_html: { class: "form-control"} %>
+   <%= f.input :availability %>
+  <%= f.input :image %>
+  </div>
+
+
+  <%= f.button :submit, class: "btn btn-primary btn-block" %>
+
+<% end %>

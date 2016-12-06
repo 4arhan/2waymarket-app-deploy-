@@ -1,0 +1,17 @@
+
+
+<div class="jumbotron">
+    <h1>Welcome to Oneverr</h1>
+    <p>The largest online Digital Market</p>
+
+    <%= link_to "Item", items_path , class: "btn btn-primary" %>
+    <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-primary" %>
+
+
+</div>
+
+<div class="row">
+
+  <%= render @items %>
+
+</div>
